@@ -1,8 +1,10 @@
 const sendMailDaily = require("./cron/sendMailDaily")
+const email = require("./nodeMaile")
+
 
 class ManagerCron {
   constructor() {
-    this.jobs = [sendMailDaily]
+    this.jobs = [sendMailDaily, email]
   }
 
   run() {

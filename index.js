@@ -1,7 +1,5 @@
 const express = require('express')
 const ManagerCron = require("./managerCron")
-const email = require("./nodeMaile")
-email
 
 const app = express()
 
