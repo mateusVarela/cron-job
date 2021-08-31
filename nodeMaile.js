@@ -1,5 +1,8 @@
 const cron = require("node-cron")
 
+/**
+ * Função que envia email.
+ */
 const sendEmail = async () => {
   require('dotenv').config();
   const senMail = require('@sendgrid/mail')
